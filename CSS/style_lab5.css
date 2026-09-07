@@ -1,0 +1,212 @@
+
+        body,*{
+            margin: 0; /* هوامش */
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif; 
+            font-family: 'cairo';
+            font-size: 15px;                                
+        } 
+        .navbar{  /*راس الصفحه*/
+            margin: 0px;
+            background-color: rgb(98, 45, 6);        
+        }
+        .navbar ul{     /* ترتيب الصفحه*/
+            list-style: none;         
+            transition: 1.0s ease-in-out;       
+        }
+        .navbar img{         /* الصور*/
+            width: 50px;           
+            height: 50px;      
+        }
+        .navbar li{  /*عرض الأزرار*/
+            display: inline-flex;/*طريقه العرض*/
+            margin-bottom: 20px;    /*حجم الأزرار*/
+            padding: 5px;   
+            word-spacing: 1px;
+            text-transform: uppercase;
+            font-size: 1px;
+            font-family: fantasy;
+            transition: 1.0s ease-in-out;
+            text-shadow: 1px 2px 21px;     
+            transition: 1.0s ease-in-out;/*هوامش*/
+        }
+        .navbar a{ /* شكل الأزرار*/
+            padding: 7px 14px;           /*هوامش*/
+            text-decoration: none;         /*زخرفه النص*/
+            color: aliceblue;        /*لون الصفحه*/
+            border: 1px white solid;            /*التسطير*/
+            text-align: center;
+            border-radius: 8px;
+            transition: 0.2s ease-in-out; /*التاثير*/
+        }
+        .navbar a:hover{ /*وميض*/
+            transform: scale(1.1);
+            color: hotpink;
+            border-bottom-left-radius: 19px;
+            border-top-right-radius: 19px;
+            border-color:hotpink;
+        }
+        .navbar a:active{
+            transform: scale(1);
+        }
+        /*----------------------------------------*/
+        main{
+            width: 100%;
+            margin-top: 2px;
+            position: relative;
+        }
+        .slider img{
+            width: 50%;
+            
+        }
+        .ratings{
+            background-color: rgb(98, 45, 6);
+            text-align: center;
+        }
+        .ratings li{ /* ازرار الوجبات*/
+            list-style: none;
+            display: inline-flex;
+            color: white;
+            margin: 5px;
+            padding: 8px 16px;
+            border-radius: 8px;
+            font-size: larger;
+            border: 1px white solid;
+            transition: 0.2s ease-in-out;
+            cursor: pointer;
+            outline: none;
+        }
+        .ratings li:hover{ /*وميض الأزرار*/
+            transform: scale(1.1);
+            color: hotpink;
+            border-bottom-left-radius: 19px;
+            border-top-right-radius: 19px;
+            border-color: hotpink;
+        }
+        .ratings li:active{
+            transform: scale(1);
+        }
+        /*------------------------------------*/
+        b{
+            color: rgb(255, 255, 255);
+            padding: 10px 15px;
+            background-color: rgb(98, 45, 6);
+            float: left;
+            border-radius: 8px;
+        }
+        h4{
+            word-spacing: 1px;
+    text-transform: uppercase;
+    font-size: 1px;
+    font-family: fantasy;
+   
+    text-shadow: 1px 2px 21px;
+            color: rgb(98, 45, 6);
+            font-weight: 700px;
+        }
+        /*---------------------------*/
+       .regester{
+            margin-top: 10px;
+            width: 100%;
+            text-align: center;
+        }
+        .regester input{
+            width: 48%;
+            height: 40px;
+            margin: 3px;
+        }
+        .regester textarea{
+            width: 97.5%;
+        }
+        ::placeholder{
+            color: rgb(98, 45, 6);
+            font-size: larger;
+            opacity: 0.9;
+            text-align: center;
+        }
+        #submit{         /*زر الأرسال */
+            background-color: rgb(98, 45, 6);
+            border-radius: 8px;
+            color: white;
+            font-size: larger;
+
+        }
+        /*---------------------------------*/
+        .contact{  /* اسفل الصفحه*/
+            background-color: rgb(98, 45, 6);
+            width: 100%;
+        }
+        .contact li{
+            list-style: none;
+            display: inline-flex;
+        }
+        .contact img{
+            width: 50px;
+            height: 50px;
+            padding: 5px;
+            transition: 0.2s ease-in-out;
+            border-radius: 50%;
+        }
+        .contact img:hover{
+            transform: scale(1.1);
+        }
+        .contact img:active{
+            transform: scale(1);
+        }
+        .contact p,address,time{
+            color: white;
+            font-size: large;
+            font-weight: bold;
+        }
+
+
+        @media (max-width: 900px) {
+             #main{
+            width: auto;
+            margin-top: 2px;
+            position: fixed;
+        }
+    }
+    @media(max-width:1504px){
+        #main,.contact ,.regester,.navbar,nav,.slider,p{
+            padding: auto;
+            height: auto;
+            margin: auto;
+            width: auto;
+            margin-top: 2px;
+      
+        }
+        }
+     
+        @media(max-width:1504px){
+           img{
+                padding: auto;
+                height: 500px;
+                margin: auto;
+                width: 1000px;
+                margin-top: 2px;
+          
+            }
+            }
+
+            @media(max-width:1504px){
+                video{
+                     padding: auto;
+                     height: 500px;
+                     margin: auto;
+                     width: 1000px;
+                     margin-top: 2px;
+               
+                 }
+                 }
+
+                 @media(max-width:1504px){
+                    audio{
+                         margin-top: 1rem;
+                   
+                     }
+                     }
+    
+
+
+   
